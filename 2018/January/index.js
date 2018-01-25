@@ -11,26 +11,26 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
-const recipes = require('./hero_counters');
+const recipes = require('./hero_synergies');
 
-const APP_ID = 'amzn1.ask.skill.8ca45dc1-a3fe-4071-9a61-3a04a986e490'; // TODO replace with your app ID (OPTIONAL).
+const APP_ID = 'amzn1.ask.skill.1262ca52-14d2-453b-8eae-c507f2cdde0c'; // TODO replace with your app ID (OPTIONAL).
 
 const languageStrings = {
     'en': {
         translation: {
             RECIPES: recipes.RECIPE_EN_US,
             // TODO: Update these messages to customize.
-            SKILL_NAME: 'Hero Picker',
-            WELCOME_MESSAGE: "Welcome to %s. You can ask a question like, what are counters to Death Prophet ... Now, what can I help you with?",
+            SKILL_NAME: 'Hero Synergies',
+            WELCOME_MESSAGE: "Welcome to %s. You can ask a question like, what heroes work well with Lycan ... Now, what can I help you with?",
             WELCOME_REPROMPT: 'For instructions on what you can say, please say help me.',
-            DISPLAY_CARD_TITLE: '%s  - Counters to %s are ',
-            HELP_MESSAGE: "You can ask questions such as, what are counters, or, you can say exit...Now, what can I help you with?",
-            HELP_REPROMPT: "You can say things like, what are counters, or you can say exit...Now, what can I help you with?",
+            DISPLAY_CARD_TITLE: '%s  - Heroes that work well with %s are ',
+            HELP_MESSAGE: "You can ask questions such as, what are synergies with, or, you can say exit...Now, what can I help you with?",
+            HELP_REPROMPT: "You can say things like, what are synergies with, or you can say exit...Now, what can I help you with?",
             STOP_MESSAGE: 'Goodbye!',
             RECIPE_REPEAT_MESSAGE: 'Try saying repeat.',
             RECIPE_NOT_FOUND_MESSAGE: "I\'m sorry, I currently do not know ",
-            RECIPE_NOT_FOUND_WITH_ITEM_NAME: 'the counters for %s. ',
-            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: 'counters to that hero. ',
+            RECIPE_NOT_FOUND_WITH_ITEM_NAME: 'what heroes work well with %s. ',
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: 'what heroes work well with that hero. ',
             RECIPE_NOT_FOUND_REPROMPT: 'What else can I help with?',
         },
     },
