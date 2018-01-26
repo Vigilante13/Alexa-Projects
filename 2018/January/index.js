@@ -11,7 +11,7 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
-const recipes = require('./hero_synergies');
+const recipes = require('./hero_works');
 
 const APP_ID = 'amzn1.ask.skill.1262ca52-14d2-453b-8eae-c507f2cdde0c'; // TODO replace with your app ID (OPTIONAL).
 
